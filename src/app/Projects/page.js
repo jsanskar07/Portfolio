@@ -24,7 +24,7 @@ const page = () => {
 
               <article className="overflow-hidden rounded-lg shadow-lg">
                 <a href="#">
-                  <Image alt="Portfolio" className="block h-auto w-full" src="static/img/Portfolio.jpg" width={500} height={500} />
+                  <Image alt="Portfolio" className="block h-auto w-full" src="/static/img/Portfolio.jpg" width={500} height={500} />
                 </a>
 
                 <header className="flex items-center justify-between leading-tight p-2 md:p-4">
@@ -64,7 +64,7 @@ const page = () => {
               <article className="overflow-hidden rounded-lg shadow-lg">
 
                 <a href="https://foodie-order-site-next.vercel.app/">
-                  <Image alt="Foodie" className="block h-auto w-full" src="static/img/Foodie.jpg" width={500} height={500} />
+                  <Image alt="Foodie" className="block h-auto w-full" src="/static/img/Foodie.jpg" width={500} height={500} />
                 </a>
 
                 <header className="flex items-center justify-between leading-tight p-2 md:p-4">
@@ -104,7 +104,7 @@ const page = () => {
               <article className="overflow-hidden rounded-lg shadow-lg">
 
                 <a href="https://github.com/jsanskar07/Employee_Management_SPA">
-                  <Image alt="Placeholder" className="block h-auto w-full" src="static/img/Employee.jpg" height={400} width={400}/>
+                  <Image alt="Placeholder" className="block h-auto w-full" src="/static/img/Employee.jpg" height={400} width={400}/>
                 </a>
 
                 <header className="flex items-center justify-between leading-tight p-2 md:p-4">
@@ -135,7 +135,7 @@ const page = () => {
             <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
               <article className="overflow-hidden rounded-lg shadow-lg">
                 <a href="https://citizentimes.onrender.com/">
-                  <Image alt="Placeholder" className="block h-auto w-full" src="static/img/CitizenTimes.jpg" width={400} height={400} />
+                  <Image alt="Placeholder" className="block h-auto w-full" src="/static/img/CitizenTimes.jpg" width={400} height={400} />
                 </a>
                 <header className="flex items-center justify-between leading-tight p-2 md:p-4">
                   <h1 className="text-lg">
