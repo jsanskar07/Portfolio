@@ -1,8 +1,6 @@
 'use client'
 import React, { useState, useTransition } from 'react'
-import profileImage from '../../../public/Images/profile.png'
 import Image from 'next/image'
-import Link from 'next/link'
 import { motion } from 'framer-motion'
 import TabButton from '../Components/TabButton'
 
@@ -82,7 +80,7 @@ const Page = () => {
                             transition={{ duration: 0.5 }}
                             className='col-span-5 place-self-center mt-4 lg:mt-0 '>
                             <div className='rounded-full bg-light w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] relative'>
-                                <Image src={profileImage} alt='profile-image' className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  rounded-full' width={350} height={350} />
+                                <Image src="/Images/profile.png" alt='profile-image' className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  rounded-full' width={350} height={350} />
                             </div>
                         </motion.div>
                         <motion.div

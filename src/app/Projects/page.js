@@ -2,11 +2,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import Foodie from '../../../public/Images/Foodie.png'
-import News from '../../../public/Images/CitizenTimes.png'
-import Portfolio from '../../../public/Images/Portfolio.png'
-import Employee from '../../../public/Images/Employee.jpg'
 import { CgWebsite } from "react-icons/cg";
+
 const page = () => {
   return (
     <main className='lg:my-0 my-6'>
@@ -27,7 +24,7 @@ const page = () => {
 
               <article className="overflow-hidden rounded-lg shadow-lg">
                 <a href="#">
-                  <Image alt="Foodie" className="block h-auto w-full" src={Portfolio} width={500} height={500} />
+                  <Image alt="Foodie" className="block h-auto w-full" src="/Images/Portfolio.png" width={500} height={500} />
                 </a>
 
                 <header className="flex items-center justify-between leading-tight p-2 md:p-4">
@@ -67,7 +64,7 @@ const page = () => {
               <article className="overflow-hidden rounded-lg shadow-lg">
 
                 <a href="https://foodie-order-site-next.vercel.app/">
-                  <Image alt="Foodie" className="block h-auto w-full" src={Foodie} width={500} height={500} />
+                  <Image alt="Foodie" className="block h-auto w-full" src="/Images/Foodie.png" width={500} height={500} />
                 </a>
 
                 <header className="flex items-center justify-between leading-tight p-2 md:p-4">
@@ -107,7 +104,7 @@ const page = () => {
               <article className="overflow-hidden rounded-lg shadow-lg">
 
                 <a href="https://github.com/jsanskar07/Employee_Management_SPA">
-                  <Image alt="Placeholder" className="block h-auto w-full" src={Employee} height={400} width={400}/>
+                  <Image alt="Placeholder" className="block h-auto w-full" src="/Images/Employee.jpg" height={400} width={400}/>
                 </a>
 
                 <header className="flex items-center justify-between leading-tight p-2 md:p-4">
@@ -147,7 +144,7 @@ const page = () => {
               <article className="overflow-hidden rounded-lg shadow-lg">
 
                 <a href="https://citizentimes.onrender.com/">
-                  <Image alt="Placeholder" className="block h-auto w-full" src={News} />
+                  <Image alt="Placeholder" className="block h-auto w-full" src="/Images/CitizenTimes.png" width={400} height={400} />
                 </a>
 
                 <header className="flex items-center justify-between leading-tight p-2 md:p-4">
