@@ -37,7 +37,7 @@ const page = () => {
                           </a>
                         </h1>
                         <p className="text-grey-darker text-sm">
-                          {value.skills}
+                          {/* {value.skills} */}
                         </p>
                       </header>
 
