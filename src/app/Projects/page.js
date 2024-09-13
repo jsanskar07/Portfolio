@@ -3,6 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { CgWebsite } from "react-icons/cg";
+import { projectsData } from '../../../data';
 
 const page = () => {
   return (
@@ -19,149 +20,47 @@ const page = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
             className="flex flex-wrap -mx-1 lg:-mx-4">
+            {
+              projectsData.map((value, index) => {
+                return (
+                  <div key={index}className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
 
-            <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+                    <article className="overflow-hidden rounded-lg shadow-lg">
+                      <a href={value.link}>
+                        <Image alt="Portfolio" className="block h-auto w-full" src={value.imageUrl} width={500} height={500} />
+                      </a>
 
-              <article className="overflow-hidden rounded-lg shadow-lg">
-                <a href="#">
-                  <Image alt="Portfolio" className="block h-auto w-full" src="/static/img/Portfolio.jpg" width={500} height={500} />
-                </a>
+                      <header className="flex items-center justify-between leading-tight p-2 md:p-4">
+                        <h1 className="text-lg">
+                          <a className="no-underline hover:underline text-black" href="#">
+                            {value.title}
+                          </a>
+                        </h1>
+                        <p className="text-grey-darker text-sm">
+                          {value.skills}
+                        </p>
+                      </header>
 
-                <header className="flex items-center justify-between leading-tight p-2 md:p-4">
-                  <h1 className="text-lg">
-                    <a className="no-underline hover:underline text-black" href="#">
-                      PORTFOLIO
-                    </a>
-                  </h1>
-                  <p className="text-grey-darker text-sm">
-                    10/12/23
-                  </p>
-                </header>
+                      <footer className="flex items-center justify-between leading-none p-2 md:p-4">
+                        <a className="flex items-center no-underline hover:underline text-black" href="#">
+                          <CgWebsite size={30} />
+                          <p className="ml-2 text-sm">
+                            {value.desc}
+                          </p>
+                        </a>
+                        <a className="no-underline text-grey-darker hover:text-red-dark" href="#">
+                          <span className="hidden">Like</span>
+                          <i className="fa fa-heart"></i>
+                        </a>
+                      </footer>
 
-                <footer className="flex items-center justify-between leading-none p-2 md:p-4">
-                  <a className="flex items-center no-underline hover:underline text-black" href="#">
-                    <CgWebsite size={30} />
-                    <p className="ml-2 text-sm">
-                      Web app to display skills
-                    </p>
-                  </a>
-                  <a className="no-underline text-grey-darker hover:text-red-dark" href="#">
-                    <span className="hidden">Like</span>
-                    <i className="fa fa-heart"></i>
-                  </a>
-                </footer>
-
-              </article>
-
-
-            </div>
-
+                    </article>
 
 
-            <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-
-
-              <article className="overflow-hidden rounded-lg shadow-lg">
-
-                <a href="https://foodie-order-site-next.vercel.app/">
-                  <Image alt="Foodie" className="block h-auto w-full" src="/static/img/Foodie.jpg" width={500} height={500} />
-                </a>
-
-                <header className="flex items-center justify-between leading-tight p-2 md:p-4">
-                  <h1 className="text-lg">
-                    <a className="no-underline hover:underline text-black" href="#">
-                      FOODIE
-                    </a>
-                  </h1>
-                  <p className="text-grey-darker text-sm">
-                    10/08/23
-                  </p>
-                </header>
-
-                <footer className="flex items-center justify-between leading-none p-2 md:p-4">
-                  <a className="flex items-center no-underline hover:underline text-black" href="#">
-                    <CgWebsite size={30} />
-                    <p className="ml-2 text-sm">
-                      Web app for food ordering
-                    </p>
-                  </a>
-                  <a className="no-underline text-grey-darker hover:text-red-dark" href="#">
-                    <span className="hidden">Like</span>
-                    <i className="fa fa-heart"></i>
-                  </a>
-                </footer>
-
-              </article>
-
-
-            </div>
-
-
-
-            <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-
-
-              <article className="overflow-hidden rounded-lg shadow-lg">
-
-                <a href="https://github.com/jsanskar07/Employee_Management_SPA">
-                  <Image alt="Placeholder" className="block h-auto w-full" src="/static/img/Employee.jpg" height={400} width={400}/>
-                </a>
-
-                <header className="flex items-center justify-between leading-tight p-2 md:p-4">
-                  <h1 className="text-lg">
-                    <a className="no-underline hover:underline text-black" href="#">
-                      EMPLOYEE MANAGEMENT
-                    </a>
-                  </h1>
-                  <p className="text-grey-darker text-sm">
-                    11/10/23
-                  </p>
-                </header>
-
-                <footer className="flex items-center justify-between leading-none p-2 md:p-4">
-                  <a className="flex items-center no-underline hover:underline text-black" href="#">
-                    <CgWebsite size={30} />
-                    <p className="ml-2 text-sm">
-                      Rest api for employee management
-                    </p>
-                  </a>
-                  <a className="no-underline text-grey-darker hover:text-red-dark" href="#">
-                    <span className="hidden">Like</span>
-                    <i className="fa fa-heart"></i>
-                  </a>
-                </footer>
-              </article>
-            </div>
-            <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-              <article className="overflow-hidden rounded-lg shadow-lg">
-                <a href="https://citizentimes.onrender.com/">
-                  <Image alt="Placeholder" className="block h-auto w-full" src="/static/img/CitizenTimes.jpg" width={400} height={400} />
-                </a>
-                <header className="flex items-center justify-between leading-tight p-2 md:p-4">
-                  <h1 className="text-lg">
-                    <a className="no-underline hover:underline text-black" href="#">
-                      NEWS APP
-                    </a>
-                  </h1>
-                  <p className="text-grey-darker text-sm">
-                    23/09/22
-                  </p>
-                </header>
-
-                <footer className="flex items-center justify-between leading-none p-2 md:p-4">
-                  <a className="flex items-center no-underline hover:underline text-black" href="#">
-                    <CgWebsite size={30} />
-                    <p className="ml-2 text-sm">
-                      Web app to read news
-                    </p>
-                  </a>
-                  <a className="no-underline text-grey-darker hover:text-red-dark" href="#">
-                    <span className="hidden">Like</span>
-                    <i className="fa fa-heart"></i>
-                  </a>
-                </footer>
-              </article>
-            </div>
+                  </div>
+                )
+              })
+            }
           </motion.div>
         </div>
       </div>

@@ -43,7 +43,7 @@ const HeroSection = () => {
                         </p>                        
                         <div>
                             <Link href="mailto:jsanskar007@gmail.com"  className='px-6 p-3 inline-block text-lg font-medium w-full sm:w-fit rounded-full mr-4 bg-dark hover:bg-light text-light hover:text-dark hover:border hover:border-dark' target={'_blank'}>Hire me</Link>
-                            <Link href="/resume.pdf" className='px-6 p-3 inline-block text-lg font-medium sm:w-fit rounded-full w-full bg-gradient-to-r hover:from-pink-500 hover:to-indigo-300 from-indigo-500 via-purple-500 to-pink-300 text-light mt-2' target={'_blank'} >Resume</Link>
+                            <Link href="https://drive.google.com/file/d/10NJ_l15ptob3hlQ3FkjU5aOTmWzaZHut/view?usp=drive_link" className='px-6 p-3 inline-block text-lg font-medium sm:w-fit rounded-full w-full bg-gradient-to-r hover:from-pink-500 hover:to-indigo-300 from-indigo-500 via-purple-500 to-pink-300 text-light mt-2' target={'_blank'} >Resume</Link>
                         </div>                        
                     </motion.div>
                     <motion.div
